@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="/src/StyleSheets/index.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<title>Project 2</title>
+</head>
+<body ng-app="Project2" ng-controller="project2Controller">
+
+  
+<!-- first nav -->
+        <nav class="navbar navbar-default  navbar-fixed-top">
+                <div class="container-fluid ">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Brand Logo</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                   
+                  </div>
+              
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                            <li><a href="#/home"><i class="fa fa-dashboard"></i> Home</a></li>
+                            <li><a href="#/profile"><i class="fa fa-tags"></i> Attendee List</a></li>
+                            <li><a href="#/filtertable"><i class="fa fa-history"></i> Table data</a></li>
+                            <li><a href="#/contact us"><i class="fa fa-history"></i> Contact Us</a></li>
+                            <li><a href="http://google.com" target="blank"><i class="fa fa-history"></i> External link</a></li>
+                            <li><a href="#/weather" ><i class="fa fa-history"></i> Weather</a></li>
+                    </ul>
+
+                    <ul class="social-network social-circle" style="float: right">
+                           
+                            <li><a href="https://www.facebook.com/sharer/sharer"  target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>	
+                    
+                    
+                      </li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+              </nav>
+              <!-- second nav -->
+
+              <br><br><br>
+              <h3 style="float: right;margin-right: 20px">Time: {{time}}</h3>
+              <br><br>
+              <h4>current url: {{url1}}</h4>
+              <h4> protocol: {{protocol}}</h4>
+              <h4> path: {{currentpath}}</h4>
+              <h4>Absolute url: {{newurl}}</h4>
+              <h4>Port: {{port}}</h4>
+              <h4>Search: {{searchObject}}</h4>
+              <h4>Hash: {{hash}}</h4>
+<br><br>
+Search : <input type="text">
+<br><br><br>
+  <div class="ng-view container">
+
+  </div>
+        
+
+    
+</body>
+<Script src="angular.js"></Script>
+<Script src="/node_modules/angular-route/angular-route.min.js"></Script>
+<script src="/src/modules/main.module.js"></script>
+<script src="src/constants/constant.js"></script>
+<script src="src/routes/route.js"></script>
+<script src="src/services/demoService.js"></script>
+<script src="src/Filters/Profile.Filter.js"></script>
+<script src="/src/controllers/main.controller.js"></script>
+<script src="src/controllers/Profile.controller.js"></script>
+<script src="src/controllers/filterTable.controller.js"></script>
+<script src="src/controllers/weather.controller.js"></script>
+<script src="src/controllers/contactus.controller.js"></script>
+<script src="src/controllers/home.controller.js"></script>
+
+</html>
