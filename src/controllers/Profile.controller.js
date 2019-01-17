@@ -17,6 +17,7 @@ demo.controller('ProfileController',function($scope,$route,getService,$timeout){
 
 
     getService.getData('https://randomuser.me/api/?results=32').then(function(success)
+    
 {
 
 $scope.personData1=success.data.results;
